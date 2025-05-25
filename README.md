@@ -2,6 +2,7 @@ import java.io.*;
 import java.util.*;
 
 // Model class for Attendance record //Divyansha
+
 class Attendance {
     private int id;
     private String studentName;
@@ -31,6 +32,8 @@ class Attendance {
 }
 
 // DAO class for file-based CRUD operations //Vanshika
+
+
 class AttendanceDAO {
     private final File file = new File("data/attendance.txt");
 
@@ -70,6 +73,7 @@ class AttendanceDAO {
     }
 
     // Update attendance record by ID //Anandee
+   
     public boolean updateAttendance(Attendance updated) throws IOException {
         List<Attendance> list = getAllAttendances();
         boolean updatedFlag = false;
@@ -88,7 +92,9 @@ class AttendanceDAO {
         return updatedFlag;
     }
 
-    // Delete attendance record by ID //Angel
+   
+ // Delete attendance record by ID //Angel
+   
     public boolean deleteAttendance(int id) throws IOException {
         List<Attendance> list = getAllAttendances();
         boolean deleted = false;
