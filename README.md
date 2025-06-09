@@ -246,9 +246,13 @@ A simple Java-based console application that allows users to **track student att
 
 This project is built as part of an academic assignment to demonstrate file handling, modular programming, and error management using Java.  
 It allows:
+
 - Adding new attendance entries
+  
 - Viewing existing records
+  
 - Updating or deleting records by ID
+  
 - Persistent storage using `.txt` file
 
 ---
@@ -256,10 +260,15 @@ It allows:
 ## Features
 
 - Add attendance record (ID, student name, date, status)
+  
 - List all attendance records in tabular form
+  
 - Update attendance by ID
+  
 - Delete attendance by ID
+  
 - Persistent storage in a local `.txt` file
+  
 - Input validation and error handling
 
 ---
@@ -269,35 +278,54 @@ It allows:
 #3. Run AttendanceTrackerApp.java
 
 #4. Use the interactive console menu to:
+
 --Add
+
 --View
+
 --Update
+
 --Delete records
 
 ## File Structure
 
 attendance-tracker/
+
 ├── data/
 │   └── attendance.txt       # Stores attendance records
+
 ├── Attendance.java          # Model class for attendance data
+
 ├── AttendanceDAO.java       # Handles file-based CRUD operations
+
 ├── AttendanceTrackerApp.java# Main app class (user interface)
+
 └── README.md                # Project documentation
 
 ## Credits
+
 Divyansha – Attendance model class
+
 Vanshika – File I/O and CRUD logic
+
 Anandee – Update functionality
+
 Angel – Delete functionality
 
 ## Folder Structure
 --Code files and resources are organized clearly.
+
 --The data/ folder holds the text file used as a database.
+
 --Java files are modularized into model, DAO, and UI logic.
 
 ## Status
  --Core feature implementation
+ 
  --File I/O handling
+ 
  --Robust input validation
+ 
  --Proper documentation
+ 
  --Console-based working UI
