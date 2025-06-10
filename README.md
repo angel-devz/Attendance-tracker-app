@@ -15,15 +15,20 @@ class Attendance {
         this.date = date;
         this.status = status;
     }
+//getters
 
     public int getId() { return id; }
     public String getStudentName() { return studentName; }
     public String getDate() { return date; }
     public String getStatus() { return status; }
+    
+//setters
 
     public void setStudentName(String studentName) { this.studentName = studentName; }
     public void setDate(String date) { this.date = date; }
     public void setStatus(String status) { this.status = status; }
+    
+// Returns a formatted string to store in file
 
     @Override
     public String toString() {
@@ -38,6 +43,9 @@ class AttendanceDAO {
     private final File file = new File("data/attendance.txt");
 
     public AttendanceDAO() {
+
+    // Create directory if it doesn't exist
+    
         if (!file.getParentFile().exists()) {
             file.getParentFile().mkdirs();
         }
@@ -50,8 +58,11 @@ class AttendanceDAO {
             writer.newLine();
         }
     }
+// Retrieve all records from file
 
     // Get all attendance records
+    //throws IOException
+    
     public List<Attendance> getAllAttendances() throws IOException {
         List<Attendance> list = new ArrayList<>();
         if (!file.exists()) return list;
