@@ -1,0 +1,10 @@
+# Compiled Java files
+*.class
+
+# App data created at runtime
+data/
+
+# IDE files
+.idea/
+*.iml
+.vscode/
